@@ -19,3 +19,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('funcionarios/list', 'FuncionariosController@index');
+Route::get('funcionarios/show/{id}', 'FuncionariosController@show');
+Route::post('funcionarios/create', 'FuncionariosController@store');
+Route::post('funcionarios/update', 'FuncionariosController@update');
+Route::post('funcionarios/destroy', 'FuncionariosController@delete');
